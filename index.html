@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/mark_logo.ico" />
+    <script src="./js/script.js" defer></script>
+    <title>Mark's Portfolio</title>
+  </head>
+  <body class="bg-slate-50 overflow-x-hidden">
+    <header class="header">
+      <nav
+        id="navbar"
+        class="w-full mx-auto z-50 py-4 px-14 transition duration-1000 opacity-0 -translate-y-32"
+      >
+        <!-- This is the Flex Container -->
+        <div class="flex items-center justify-between space-x-20 my-6">
+          <!-- Menu Logo -->
+          <div class="z-30">
+            <a href="#home"
+              ><img class="w-48" src="./images/Marky_logo.png" alt="" id="logo"
+            /></a>
+          </div>
+
+          <!-- Menu Items -->
+          <div
+            class="hidden items-center space-x-10 uppercase text-gray-600 md:flex"
+          >
+            <a
+              href="#hero"
+              class="tracking-widest hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="tracking-widest hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="tracking-widest hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+              >Services</a
+            >
+            <a
+              href="#portfolio"
+              class="tracking-widest hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+              >Portfolio</a
+            >
+            <a
+              href="#contact"
+              class="tracking-widest hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+              >Contact</a
+            >
+          </div>
+          <!-- Hamburger Button -->
+          <button
+            id="menu-btn"
+            class="z-30 block md:hidden focus:outline-none hamburger"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
+        >
+          <div class="w-full py-3 text-center">
+            <a
+              href="#about"
+              class="block hover:text-softRed transition duration-200"
+              >About</a
+            >
+          </div>
+          <div class="w-full py-3 text-center">
+            <a
+              href="#services"
+              class="block hover:text-softRed transition duration-200"
+              >Service</a
+            >
+          </div>
+          <div class="w-full py-3 text-center">
+            <a
+              href="#portfolio"
+              class="block hover:text-softRed transition duration-200"
+              >Portfolio</a
+            >
+          </div>
+          <div class="w-full py-3 text-center">
+            <a
+              href="#contact"
+              class="block hover:text-softRed transition duration-200"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Home Page Section -->
+      <section
+        id="hero"
+        class="opacity-0 translate-y-32 transition duration-1000"
+      >
+        <!-- Container for Image and Contents -->
+        <div
+          class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
+        >
+          <!-- Contents -->
+          <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+            <h1
+              class="text-3xl font-semibold text-center lg:text-6xl lg:text-left"
+            >
+              <span class="auto-type"></span>
+            </h1>
+            <p
+              class="max-w-md mx-auto text-lg text-center text-grayishBlue lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
+            >
+              My name is Mark Lester T. Acak. A Full Stack Web Developer having
+              specialization in back end & front end development. I have Backend
+              Skills in PHP, Java, and NodeJS. I also have Frontend Skills in
+              Javascript, ReactJS VueJS, CSS / SASS, Bootstrap & TailwindCSS.
+            </p>
+
+            <!-- Buttons Container -->
+            <div
+              class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+            >
+              <a
+                href="https://github.com/mlester999"
+                class="p-4 text-sm font-medium text-white bg-grayish rounded-full shadow-lg md:text-base hover:bg-white hover:text-grayish hover:ring-2 hover:ring-grayish transition duration-200"
+                >Check My Resume
+                <i class="ml-1 fa-solid fa-lg fa-arrow-up-from-bracket"></i
+              ></a>
+              <a
+                href="mailto:mlester0806@gmail.com"
+                class="p-4 text-sm font-medium text-white bg-softBlue rounded-full shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >Let's work together
+                <i class="ml-1 fa-solid fa-lg fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+            <div class="bg-hero"></div>
+            <img
+              src="./images/marky_pfp.png"
+              alt=""
+              class="relative z-10 mx-auto sm:w-10/12 lg:top-10 lg:w-auto xl:top-0 xl:w-10/12 overflow-x-visible"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- About Heading -->
+    <section id="about" class="transition duration-1000">
+      <div class="container mx-auto mt-16 px-6">
+        <h2 class="mb-6 text-4xl font-semibold text-center">About</h2>
+        <p
+          class="max-w-lg text-lg mx-auto text-center text-grayishBlue lg:text-xl"
+        >
+          Aside from being a full stack web developer, I also have different
+          skills, hobbies, and goals that I like to share with you so that you
+          get to know me more. You can take a look below what's all about
+          myself.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Tabs -->
+    <section id="tabs" class="transition duration-1000">
+      <!-- Tabs/Panels Container -->
+      <div class="container relative mx-auto my-6 mt-12 px-6">
+        <div class="bg-tabs"></div>
+        <!-- Tabs Flex Container -->
+        <div
+          class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row"
+        >
+          <!-- First Tab -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-1"
+          >
+            <div
+              class="py-5 text-base md:text-xl border-b-4 cursor-pointer border-softRed transition duration-300"
+              data-target="panel-1"
+            >
+              Skills
+            </div>
+          </div>
+
+          <!-- Second Tab -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-2"
+          >
+            <div
+              class="py-5 text-base md:text-xl cursor-pointer transition duration-300"
+              data-target="panel-2"
+            >
+              Hobbies
+            </div>
+          </div>
+
+          <!-- Third Tab -->
+          <div
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-3"
+          >
+            <div
+              class="py-5 text-base md:text-xl cursor-pointer transition duration-300"
+              data-target="panel-3"
+            >
+              Goals
+            </div>
+          </div>
+        </div>
+        <!-- Tab Panels -->
+        <div id="panels" class="container mx-auto">
+          <!-- Panel 1 -->
+          <div
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img src="./images/skills.png" alt="" class="relative z-10" />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                My Skills
+              </h3>
+              <p
+                class="max-w-lg text-lg text-center text-grayishBlue lg:text-xl md:text-left"
+              >
+                I have many skills in life and I learned that by being curious
+                of what is it. My other skills are Video Editing, Photo Editing,
+                Videography, and Photography. I have many experiences editing
+                videos and photos with different clients. I have also
+                experiences in videography and photography with many clients.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="https://github.com/mlester999"
+                  class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Panel 2 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-2"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img src="./images/hobbies.png" alt="" class="relative z-10" />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                My Hobbies
+              </h3>
+              <p
+                class="max-w-lg text-lg text-center text-grayishBlue lg:text-xl md:text-left"
+              >
+                My hobbies are playing basketball with my friends, playing
+                computer and mobile games, playing with my cute dogs and cats,
+                and most especially is watching udemy courses. Watching courses
+                and coding along while the mentor is teaching helps me to
+                upskill. Playing basketball helps me relieve my stress.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="https://github.com/mlester999"
+                  class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Panel 3 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-3"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img src="./images/goals.png" alt="" class="relative z-10" />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                My Goals
+              </h3>
+              <p
+                class="max-w-lg text-lg text-center text-grayishBlue lg:text-xl md:text-left"
+              >
+                Being a developer needs to learn and study everyday because it
+                makes us updated to the technology world. Developer needs to
+                learn a new knowledges and skills to adopt the trend. My goal is
+                to learn Laravel, Angular JS, and to complete the MERN Stack.
+                While I'm working with my clients, I'm learning new skills in my
+                free time.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="https://github.com/mlester999"
+                  class="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="transition duration-1000">
+      <div class="container mx-auto px-6">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
+          Services I offer
+        </h2>
+        <p
+          class="max-w-lg text-lg mx-auto text-center text-grayishBlue lg:text-xl"
+        >
+          Through the years of being a full stack web developer, I have learned
+          many programming languages and also enhance my knowledges and skills
+          by making different projects. So, I am confident now to share my
+          services so we can start to work it out as soon as possible.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Boxes -->
+    <section id="download-boxes" class="transition duration-1000 py-20">
+      <!-- Languages -->
+      <h2 class="mb-12 text-3xl font-semibold text-center md:text-4xl">
+        Languages
+      </h2>
+      <!-- First Box Container -->
+      <div
+        class="relative flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row"
+      >
+        <!-- First Box -->
+        <div
+          class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3"
+        >
+          <!-- Image -->
+          <div class="flex justify-center">
+            <img src="./images/html-logo.png" alt="" />
+          </div>
+          <!-- Text -->
+          <h5 class="pt-6 text-xl font-bold">HTML5</h5>
+          <p class="text-gray-400">Standard Markup Language</p>
+
+          <!-- Dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+            <a
+              href="https://github.com/mlester999"
+              class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+              >View Projects</a
+            >
+          </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/css-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">CSS</h5>
+            <p class="text-gray-400">Style Sheet Language</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/js-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">JavaScript</h5>
+            <p class="text-gray-400">Interpreted Programming Language</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Box Container -->
+      <div
+        class="relative mt-16 flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row"
+      >
+        <!-- First Box -->
+        <div
+          class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3"
+        >
+          <!-- Image -->
+          <div class="flex justify-center">
+            <img src="./images/java-logo.png" alt="" />
+          </div>
+          <!-- Text -->
+          <h5 class="pt-6 text-xl font-bold">Java</h5>
+          <p class="text-gray-400">High-Level Programming Language</p>
+
+          <!-- Dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+            <a
+              href="https://github.com/mlester999"
+              class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+              >View Projects</a
+            >
+          </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/php-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">PHP</h5>
+            <p class="text-gray-400">Server Scripting Language</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/dart-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Dart</h5>
+            <p class="text-gray-400">Client-Optimized Language</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download-boxes" class="transition duration-1000 pb-20">
+      <!-- Frameworks -->
+      <h2 class="mb-12 text-3xl font-semibold text-center md:text-4xl">
+        Frameworks
+      </h2>
+      <!-- Third Box Container -->
+      <div
+        class="relative flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row"
+      >
+        <!-- First Box -->
+        <div
+          class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3"
+        >
+          <!-- Image -->
+          <div class="flex justify-center">
+            <img src="./images/bootstrap-logo.png" alt="" />
+          </div>
+          <!-- Text -->
+          <h5 class="pt-6 text-xl font-bold">Bootstrap</h5>
+          <p class="text-gray-400">Front-End CSS Framework</p>
+
+          <!-- Dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+            <a
+              href="https://github.com/mlester999"
+              class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+              >View Projects</a
+            >
+          </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/tailwind-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Tailwind CSS</h5>
+            <p class="text-gray-400">Utility-First CSS Framework</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/nodejs-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Node JS</h5>
+            <p class="text-gray-400">JavaScript Runtime Environment</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Box Container -->
+      <div
+        class="relative mt-16 flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row"
+      >
+        <!-- First Box -->
+        <div
+          class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3"
+        >
+          <!-- Image -->
+          <div class="flex justify-center">
+            <img src="./images/react-logo.png" alt="" />
+          </div>
+          <!-- Text -->
+          <h5 class="pt-6 text-xl font-bold">React JS</h5>
+          <p class="text-gray-400">User Interface JavaScript Library</p>
+
+          <!-- Dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+            <a
+              href="https://github.com/mlester999"
+              class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+              >View Projects</a
+            >
+          </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/vue-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Vue JS</h5>
+            <p class="text-gray-400">Progressive JavaScript Framework</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Box -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./images/flutter-logo.png" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Flutter</h5>
+            <p class="text-gray-400">Mobile UI Dart Framework</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://github.com/mlester999"
+                class="block w-full py-3 text-sm font-semibold text-white bg-softBlue rounded shadow-lg md:text-base hover:bg-white hover:text-softBlue hover:ring-2 hover:ring-softBlue transition duration-200"
+                >View Projects</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Heading -->
+    <section id="portfolio" class="transition duration-1000">
+      <div class="container mx-auto">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
+          My Portfolio
+        </h2>
+        <p
+          class="max-w-lg text-lg px-6 mx-auto text-center text-grayishBlue lg:text-xl"
+        >
+          By doing a lot of different projects with different clients, I have
+          built a portfolio that can really impress a potential client. You can
+          check my portfolio below.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Accordion -->
+    <section id="portfolio-accordion" class="transition duration-1000">
+      <!-- Main Container -->
+      <div class="container mx-auto px-6 mb-32">
+        <!-- Accordion Container -->
+        <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+          <!-- First Tab -->
+          <div class="py-1 border-b outline-none group" tabindex="1">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="text-lg transition duration-500 ease group-hover:text-red-500"
+              >
+                Aurora Borealis Tour Website
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="text-lg py-2 text-justify text-gray-400">
+                This is the website I made for Aurora Borealis. I really love
+                this northern light because it makes you feel powerful and
+                motivated. They will align your heart and soul to perfect
+                harmony, and the world will never be the same.
+              </p>
+              <div class="mt-4 ml-1 mb-6">
+                <img src="./portfolio/aurora.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Tab -->
+          <div class="py-1 border-b outline-none group" tabindex="2">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="text-lg transition duration-500 ease group-hover:text-red-500"
+              >
+                Mapty Workout Website
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="text-lg py-2 text-justify text-gray-400">
+                This is the website I made for taking down your pending daily
+                workout. This is really helpful if you tend to forget what to do
+                with your daily exercise. You can schedule your workout whether
+                if you run or bike. There is also a map so that you can really
+                see where you will start your workout.
+              </p>
+              <div class="mt-4 ml-1 mb-6">
+                <img src="./portfolio/mapty.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Tab -->
+          <div class="py-1 border-b outline-none group" tabindex="3">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="text-lg transition duration-500 ease group-hover:text-red-500"
+              >
+                Pig Game Dice Website
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="text-lg py-2 text-justify text-gray-400">
+                This is the website I made for a pig game. You will simply roll
+                the dice but when the dice rolls the number 1, the turn will
+                change to another player and that player has the chance to roll
+                the dice. If the player holds the current dice, it will be saved
+                to their final score. The first to reach 100 wins the game.
+              </p>
+              <div class="mt-4 ml-1 mb-6">
+                <img src="./portfolio/pig_game.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth Tab -->
+          <div class="py-1 border-b outline-none group" tabindex="4">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-200 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="text-lg transition duration-500 ease group-hover:text-red-500"
+              >
+                Guess the Number Game
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="text-lg py-2 text-justify text-gray-400">
+                This is the website I made for guessing the number game. You
+                will simply guess a number and once you check it, there is an
+                indicator that will pop up that says if the number you type is
+                "Too high" or "Too low". Once you got the right number then you
+                are the winner.
+              </p>
+              <div class="mt-4 ml-1 mb-6">
+                <img src="./portfolio/guess.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-softBlue transition duration-1000">
+      <!-- Main Container -->
+      <div class="max-w-lg mx-auto py-24">
+        <p
+          class="mb-6 text-lg tracking-widest text-center text-white uppercase"
+        >
+          I'm interested in freelance opportunities.
+        </p>
+        <h2
+          class="px-3 mb-6 text-3xl font-semibold text-center text-white md:text-4xl sm:text-2xl"
+        >
+          Have an exciting project where you need some help?
+        </h2>
+        <!-- Form -->
+        <form
+          class="flex flex-col items-start justify-center max-w-2xl mx-auto space-y-6 text-base px-6 md:flex-row md:space-y-0 md:space-x-4 md:px-0"
+        >
+          <!-- Input & Button Container -->
+          <div
+            class="flex flex-col justify-between items-center mx-auto md:flex-row md:mx-0"
+          >
+            <!-- <input
+              type="text"
+              class="flex-1 px-6 pt-3 pb-2 mb-4 rounded-lg border-1 border-white focus:outline-none md:mr-3 md:mb-0"
+              placeholder="Enter your email address"
+            /> -->
+            <a
+              href="mailto:mlester0806@gmail.com"
+              class="p-4 text-sm font-medium text-white bg-softRed rounded-full shadow-lg md:text-base hover:bg-white hover:text-softRed hover:ring-2 hover:ring-softRed transition duration-200"
+              >Contact Me
+              <i class="ml-1 fa-solid fa-lg fa-arrow-right"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-veryDarkBlue">
+      <!-- Footer Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+      >
+        <!-- Logo/Menu Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-gray-300"
+        >
+          <a href="#navbar">
+            <img src="images/Marky_logo_white.png" alt="" class="w-48 mb-1"
+          /></a>
+
+          <a
+            href="#about"
+            class="uppercase hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="uppercase hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+            >Services</a
+          >
+          <a
+            href="#portfolio"
+            class="uppercase hover:text-grayishBlue hover:border-b-4 hover:border-softRed transition duration-200"
+            >Portfolio</a
+          >
+        </div>
+        <!-- Social Container -->
+        <div class="flex space-x-10">
+          <a href="https://www.facebook.com/mlester999/">
+            <i
+              class="text-slate-300 fa-brands fa-2xl fa-facebook hover:scale-110 transition duration-300"
+            ></i>
+          </a>
+          <a href="https://twitter.com/mlester999">
+            <i
+              class="text-slate-300 fa-brands fa-2xl fa-twitter hover:scale-110 transition duration-300"
+            ></i>
+          </a>
+          <a href="https://www.instagram.com/_mrklstr/">
+            <i
+              class="text-slate-300 fa-brands fa-2xl fa-instagram hover:scale-110 transition duration-300"
+            ></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mlta">
+            <i
+              class="text-slate-300 fa-brands fa-2xl fa-linkedin hover:scale-110 transition duration-300"
+            ></i>
+          </a>
+          <a href="https://github.com/mlester999">
+            <i
+              class="text-slate-300 fa-brands fa-2xl fa-github hover:scale-110 transition duration-300"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </body>
+</html>
